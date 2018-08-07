@@ -1,0 +1,16 @@
+<section class="container">
+  <app-game-control (gameStarted)="startGame()"
+                    (gameStopped)="stopGame()"
+                    (gameResetted)="resetGame()"
+                    [isGameStarted]="gameStarted">
+  </app-game-control>
+  <hr>
+  <section class="row">
+    <div class="col-md-6">
+      <app-even-odd [type]="evenOddType.EVEN" [numbers]="evenNumbers"></app-even-odd>
+    </div>
+    <div class="col-md-6">
+      <app-even-odd [type]="evenOddType.ODD" [numbers]="oddNumbers"></app-even-odd>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,7 @@
+<div class="row d-flex justify-content-center">
+  <div class="col-md-8 d-flex justify-content-between">
+    <button class="btn btn-success" (click)="gameStarted.emit()" [disabled]="isGameStarted">Start Game</button>
+    <button class="btn btn-danger" (click)="gameResetted.emit()">Reset Game</button>
+    <button class="btn btn-primary" (click)="gameStopped.emit()" [disabled]="!isGameStarted">Stop Game</button>
+  </div>
+</div>
